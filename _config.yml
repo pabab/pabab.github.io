@@ -1,24 +1,24 @@
-title:            Pabab's DevLog
-description:      Random stuff I make computers do.
+title:            pabab's devlog
+description:      Random stuff I make computers do
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:              http://localhost:4000
+url:              pabab.github.io
 
 # Owner/author information
 owner:
   name:           Pablo Abratte
   avatar:         avatar.png
-  bio:            "Programming & CS professor. I develop games as a hobby."
+  bio:            "CS professor. Hobbyist game developer. I like creating stuff."
   email:          
   # Social networking links used in footer. Update and remove as you like.
   twitter:        pabab
   facebook:       
-  github:         https://github.com/pabab
+  github:         pabab
   stackexchange:  
-  linkedin:       pablo-abratte-33298665
+  linkedin:      
   instagram:      
   flickr:         
   tumblr:         
