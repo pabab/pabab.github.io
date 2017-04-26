@@ -1,29 +1,29 @@
-title:            Site Title
-description:      Describe your website here.
+title:            Pabab's DevLog
+description:      Random stuff I make computers do.
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:
+url:              http://localhost:4000
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
-  email:          you@email.com
+  name:           Pablo Abratte
+  avatar:         avatar.png
+  bio:            "Programming & CS professor. I develop games as a hobby."
+  email:          
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter:        pabab
   facebook:       
-  github:         
+  github:         https://github.com/pabab
   stackexchange:  
-  linkedin:       
+  linkedin:       pablo-abratte-33298665
   instagram:      
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
-  google_plus:
+  google_plus:	  +PabloAbratte
 
 # Background image to be tiled on all pages
 background: 
