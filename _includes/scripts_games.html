@@ -1,35 +1,3 @@
-<div data-remodal-id="modal">
-  <button data-remodal-action="close" class="remodal-close"></button>
-  <h1 id="modal-title"></h1>
-  <div id="modal-content">
-  </div>
-</div>
 
-<script src="{{ site.url }}/assets/js/vendor/remodal.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('.game-card').on('click', function(){
-    var inst = $('[data-remodal-id=modal]').remodal();
-    console.log($(this).attr("data-title"));
-    $('#modal-title').html($(this).attr("data-title"));
-    var video_url = $(this).attr("data-video");
-    var link = $(this).attr("data-link");
-    var snapshot = $(this).attr("data-snapshot");
-    var content = ''
-    if(video_url !== ''){
-      content+='<div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe src="'+video_url+'" allowfullscreen="" id="fitvid815885" frameborder="0"></iframe></div>';
-    }else{
-      content+='<img src="{{site.url}}/images/games/'+snapshot+'"></img>'
-    }
-    content+='<p>'+$(this).attr("data-brief")+'</p>';
-
-    content+='<a class="btn btn-success" target="_blank" href="'+link+'">See More</a>';
-    $('#modal-content').html(content);
-    inst.open();
-  });
-  $(document).on('closed', '.remodal', function (e) {
-    $('#modal-content').html('');
-  });
-});
 
 </script>
