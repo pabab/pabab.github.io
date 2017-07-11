@@ -1,0 +1,55 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+<link rel="stylesheet" href="{{ site.url }}/assets/css/games.css">
+</head>
+
+<body id="page" {% if page.image.feature %}class="feature"{% endif %}>
+
+{% include browser-upgrade.html %}
+{% include navigation.html %}
+
+{% if page.image.feature %}
+<div class="entry-header">
+  {% if page.image.credit %}<div class="image-credit">Image source: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
+  <div class="entry-image">
+    <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+{% endif %}
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        <h1 class="entry-title">{{ page.title }}</h1>
+      </div><!-- /.header-title-wrap -->
+    </header>    
+
+    <div class="entry-content">
+      
+      These are some of the games I've made. Most of them aren't fully completed, in the sense they still lack some gameplay improvements or more level. Despite that, I'm proud of them &#9786; and hope you enjoy.
+      
+      <div class="game-card-container">
+        {% for game in page.games %}
+              <div class="game-card" style="background-image:url('{{ site.url }}/images/games/{{game.image}}')" data-title="{{game.title}}" data-video="{{game.video}}" data-brief="{{game.brief}}" data-link="{{game.link}}" data-snapshot="{{game.snap}}" ><div class="title">{{game.title}}</div></div>
+        {% endfor %}
+      </div>
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+{% include scripts.html %}
+{% include scripts_games.html %}       
+
+</body>
+</html>
