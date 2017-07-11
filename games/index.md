@@ -25,7 +25,7 @@ games:
  - title: Programming Quest
    brief: Help Tim escape the rooms of an industrial complex guiding his actions with a simple -graphical block based- programming language.
    image: programming_quest.png
-   video: https://youtu.be/ptXcRbVhKRk
+   video: https://www.youtube.com/embed/ptXcRbVhKRk
    link: https://pabab.itch.io/programming-quest
 
 
